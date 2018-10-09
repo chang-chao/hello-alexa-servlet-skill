@@ -31,7 +31,7 @@ public class HelloIntentHandler implements RequestHandler {
 	@Override
 	public Optional<Response> handle(HandlerInput input) {
 		String speechText = "こんにちは、宜しくお願いします。";
-		return input.getResponseBuilder().withSpeech(speechText).withSimpleCard("HelloWorld", speechText).build();
+		return input.getResponseBuilder().withSpeech(speechText).build();
 	}
 
 }
